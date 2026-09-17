@@ -114,3 +114,51 @@ object, no contact shadow, tip touching side of nose, horizontal alignment`
 
 O instrumento desta cena é o **tepi**, não o kuripe. Não usar "kuripe" no
 prompt — devolve a peça curva em V da auto-aplicação.
+
+---
+
+# Ronda 3 — REGRESSÃO, voltar à v2
+
+Resultado: `referencia/cartaz-v3-regressao.png`. **Pior que a v2.** Não usar.
+
+## O que correu mal
+
+A expressão "funnel-shaped flare" no prompt da ronda 2 foi interpretada como
+uma boca cónica: a ponta virou uma trombeta mais larga que um punho, tipo corno
+cerimonial ou didgeridoo. Reintroduz o erro original de espessura e acrescenta
+um defeito novo — tubo assimétrico, fino na boca e maciço no nariz. Apareceu
+também uma segunda banda de miçangas junto ao bico.
+
+Num tepi real o alargamento da extremidade é de **um a dois milímetros**,
+quase impercetível. O calibre é fino e essencialmente uniforme de ponta a ponta.
+
+## Correção: reaplicar sobre a v2, não sobre a v3
+
+Máscara: últimos 3 cm do tubo + narina.
+
+> Keep the blowpipe slim and uniform: the tube must stay the same thin diameter
+> along its entire length, no wider than a finger from end to end. The final
+> centimetre narrows very slightly into a smooth rounded nozzle of polished dark
+> wood or bone, subtly different in sheen from the bamboo shaft. The change in
+> width is only a millimetre or two and barely noticeable. The nozzle is seated
+> a few millimetres inside the elder's nostril, angled slightly upward into the
+> nose. The nostril is gently compressed around it. Soft contact shadow and
+> ambient occlusion where it meets the skin. Photorealistic macro detail in warm
+> golden backlight.
+
+**Negative:** `flared end, funnel, cone, horn, trumpet bell, widening tube,
+thick end, tapered wide mouth, didgeridoo, asymmetric tube, beaded collar at
+the tip`
+
+## Plano B
+
+Se a ferramenta voltar a engrossar a ponta, remover do prompt toda a frase
+sobre o bico e pedir **apenas** a sombra de contacto e o assentamento na
+narina. A v2 sem bico esculpido, mas com contacto credível, é aceitável — e
+preferível a arriscar nova regressão.
+
+## Nota de redação de prompt
+
+Evitar `flare`, `funnel`, `cone`, `bell`, `taper` sem qualificador de escala.
+Estes modelos amplificam qualquer termo de forma. Quantificar sempre
+("a millimetre or two", "barely noticeable") ou omitir.
