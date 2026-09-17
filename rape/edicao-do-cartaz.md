@@ -70,3 +70,47 @@ fire, embers, ash
 
 `RAPÉH` é grafia inventada. Se fores refazer a tipografia, usar **RAPÉ** ou
 **HAPÉ**. Se a edição for só às duas zonas acima, o texto fica como está.
+
+---
+
+# Ronda 2 — afinar a ponta do tepi
+
+Estado após a ronda 1: `referencia/cartaz-v2.png`. Corpo do tubo correto
+(fino, reto, fio e miçangas a meio) e fumo removido. Falta a extremidade.
+
+## O que ainda está errado
+
+1. **Sem bico esculpido.** Diâmetro uniforme até um corte reto — lê como lápis
+   ou vareta. Um tepi afina nos últimos 2–3 cm num cone, muitas vezes com um
+   ligeiro alargamento em funil na extremidade, tipicamente em osso polido ou
+   madeira escura, com brilho e material distintos do corpo de bambu.
+2. **Não entra na narina.** Está encostado à lateral do nariz. O bico assenta
+   alguns milímetros **dentro** da abertura, com a narina comprimida à volta.
+3. **Ângulo horizontal.** Deve subir em ângulo para dentro do nariz.
+4. **Sem sombra de contacto.** Falta oclusão onde toca na pele — é o que faz o
+   objeto parecer flutuar. Provavelmente o maior denunciador do render.
+
+## Prompt (máscara: últimos 3–4 cm do tubo + narina)
+
+> Refine the tip of the tepi blowpipe. The last 3 cm should be hand-carved and
+> tapered: the bamboo narrows into a cone and ends in a slight funnel-shaped
+> flare, made of polished bone or dark hardwood, visibly different in material
+> and sheen from the bamboo shaft. The tip is seated a few millimetres inside
+> the elder's nostril, angled slightly upward into the nose, not horizontal and
+> not touching the side of the nose. The nostril is gently compressed and
+> deformed around it. Add a soft contact shadow and ambient occlusion where the
+> tip meets the skin. Photorealistic macro detail, matching the warm golden
+> backlight.
+
+**Negative:** `blunt cut end, uniform diameter tube, pencil tip, floating
+object, no contact shadow, tip touching side of nose, horizontal alignment`
+
+## Menores
+
+- O pó está a sair acima e atrás do nariz; devia estar no ponto de contacto.
+- O queixo continua atirado para trás (pose de exalação); recolhido é mais fiel.
+
+## Terminologia
+
+O instrumento desta cena é o **tepi**, não o kuripe. Não usar "kuripe" no
+prompt — devolve a peça curva em V da auto-aplicação.
